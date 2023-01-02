@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+}
+
+.overAll{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 62px;
+    top: 64px;
+    border-radius: 10px;
+
+    background: #1F2937;
+}
+
+.text{
+    color: white;
+}
+
+.button1{
+    border-radius: 10px;
+    border-width: 1px;
+    align-content: center;
+    margin: 5px;
+    background: #10B981;
+}
+
+.heading{
+    position: absolute;
+    width: 354px;
+    height: 80px;
+    left: 52px;
+    top: 11px;
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */
+
+    letter-spacing: -0.025em;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+.green{
+/* Heading */
+    position: absolute;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */
+
+    letter-spacing: -0.025em;
+
+    color: #4ADF86;
+}
+
+h1{
+    margin: 10px 10px 5px 10px;
+}
+
+form{
+    font-size: 18px;
+    margin: 10px 10px 5px 16px;
+}
+
+.label{
+    color: white;
+}
+
+.form{
+    text-align: center;
+    width: auto;
+    border: none;
+    border-radius: 10px;
+}
+
+.formDefault{
+    text-align: center;
+    width: auto;
+    border: none;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.userInput{
+    margin: 10px;
+}
+
+.container{
+    margin: 1px;
+}
+
+.generateButton{
+    margin: 1px;
+}
+
+.line{
+    position: absolute;
+    width: 446px;
+    height: 0px;
+    left: 52px;
+    top: 269px;
+    margin: 1px;
+
+    border: 1px solid #93abcc;
+}
+
+.container2{
+    margin: 150px 10px 10px 100px;
+}
+
+.button2{
+    border-radius: 10px;
+    border-width: 1px;
+    align-content: center;
+    width: 100px;
+    height: 30px;
+    margin: 1px 1px 1px 1px;
+}
+.submit-btn{
+    border-radius: 10px;
+    border-width: 1px;
+    align-content: center;
+    margin: 3px;
+}

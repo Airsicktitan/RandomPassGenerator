@@ -1,0 +1,43 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <div class="background">
+        <body>
+            <div class="overAll">
+                <h1>
+                    <p class="heading">Generate a <br><span class="green">random password</span></p>
+                </h1>
+                <div class="container2">
+                    <div class="generateButton">
+                        <button onclick="passwordGenerate()"class="button1">
+                            <p class="text">Generate Password</p>
+                        </button>
+                        <form>
+                            <input type="checkbox" id="check1">
+                            <label class="text">No Special Characters</label>
+                            <input type="checkbox" id="check2">
+                            <label class="text">No Numbers</label>
+                        </form>
+                        <label class="label" id="title">Enter length of password desired: </lable>
+                        <input class="formDefault" id="userInput" value="15">
+                    </div>
+                    <p class="line"></p>
+                    <div>
+                        <button onclick="copy()" class="button1" id="genPass1">
+                            <p class="text" id="pass1">Password 1</p>
+                        </button>
+                        <button onclick="copy2()" class="button1" id="genPass2">
+                            <p class="text" id="pass2">Password 2</p>
+                        </button>
+                            <form class="title">
+                                <p class="text" id="clickTest1">Replace 1</p>
+                                <p class="text" id="clickTest2">Replace 2</p>
+                            </form>
+                    </div>
+                </div>
+            </div>
+            <script src="index.js"></script>
+        </body>
+    </div>
+</html>
