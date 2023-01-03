@@ -16,6 +16,12 @@ function passwordGenerate(){
     if(isNaN(userValue.value)){
         alert("Please use numbers.")
     }
+    else if(userValue.value > 25){
+        alert("Please use a lower number.")
+    }
+    else if(userValue.value < 5){
+        alert("Please use a number five or greater.")
+    }
     else if( userValue.value != defaultValue ){
         if(special.checked === true && num.checked === false){
             // special characters indexed at [61 - 90]
@@ -133,9 +139,7 @@ function passwordGenerate(){
             password1.textContent = result1
             password2.textContent = result2
             
-            //let item = "/", index = characters.indexOf(item)
-            
-            //console.log(index) // special characters indexed at [61 - 90]
+         // special characters indexed at [61 - 90]
         }
         else{
             password1.textContent = "Error 1"
@@ -150,7 +154,7 @@ function copy(){
         alert("Please generate a password.")
     }
     else if(clicked1){
-        replace1.textContent = result1
+        alert(`${password1.textContent} has been copied!`)
     }
     else{
         replace1.textContent = "No password to copy."
@@ -163,9 +167,7 @@ function copy2(){
         alert("Please generate a password.")
     }
     else if(clicked2){
-        replace2.textContent = result2
-        //copyToClipboard()
-        //await navigator.clipboard.writeText("test text")
+        alert(`${password2.textContent} has been copied!`)
     }
     else{
         replace2.textContent = "No password to copy."
@@ -174,19 +176,23 @@ function copy2(){
 
 
 function pass1Copy(){
+    let copiedPass1 = password1.textContent;
+    navigator.clipboard.writeText(copiedPass1)
     clicked1 = true
 }
 
 function pass2Copy(){
+    let copiedPass2 = password2.textContent;
+    navigator.clipboard.writeText(copiedPass2)
     clicked2 = true
 }
 
 function eventListen1(){
-    return generatedPass1.addEventListener("click", pass1Copy())
+    generatedPass1.addEventListener("click", pass1Copy())
 }
 
 function eventListen2(){
-    return generatedPass2.addEventListener("click", pass2Copy())
+    generatedPass2.addEventListener("click", pass2Copy())
 }
 
 //function copyToClipboard(){
