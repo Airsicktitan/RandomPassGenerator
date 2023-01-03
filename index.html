@@ -9,14 +9,14 @@
                 </h1>
                 <div class="container2">
                     <div class="generateButton">
-                        <button onclick="passwordGenerate()" class="button1">
+                        <button onclick="passwordGenerate()" class="button1 mouseover">
                             <p class="text">Generate Password</p>
                         </button>
                         <div class="checkBoxes">
                             <form>
-                                <input class ="grid1" type="checkbox" id="check1">
+                                <input class ="grid1 mouseover" type="checkbox" id="check1">
                                 <label class="text">No Special Characters</label>
-                                <input class ="grid1" type="checkbox" id="check2">
+                                <input class ="grid1 mouseover" type="checkbox" id="check2">
                                 <label class="text">No Numbers</label>
                             </form>
                         </div>
@@ -30,12 +30,12 @@
                         <div class="generatedPass">
                             <tr>
                                 <td>
-                                    <button onclick="copy()" class="button2" id="genPass1">
+                                    <button onclick="copy()" class="button2 mouseover" id="genPass1">
                                         <p class="text" id="pass1">Password 1</p>
                                     </button>
                                 </td>
                                 <td>
-                                    <button onclick="copy2()" class="button2" id="genPass2">
+                                    <button onclick="copy2()" class="button2 mouseover" id="genPass2">
                                         <p class="text" id="pass2">Password 2</p>
                                     </button>
                                 </td>
@@ -54,7 +54,7 @@
                     </table>
                 </div>
             </div>
-            <script>
+            <script >
                 const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
                 "/"];
 
@@ -251,7 +251,6 @@
                 function eventListen2(){
                     generatedPass2.addEventListener("click", pass2Copy())
                 }
-
             </script>
         </body>
 </html>
