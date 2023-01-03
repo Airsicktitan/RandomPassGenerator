@@ -5,6 +5,9 @@
     "vite": "latest"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node index.js",
+    "build": "node index.js build",
+    "preview": "node index.js preview"
   }
 }
